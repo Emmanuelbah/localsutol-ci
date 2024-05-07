@@ -3,7 +3,7 @@
   
 <!-- Mirrored from emoekoffi.github.io/sutol_ci/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Mar 2024 13:04:10 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact-Sutolci</title>
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/responsee.css">
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="shortcut icon" href="img/logo-sutol.png">
     <!-- CUSTOM STYLE -->
     <link rel="stylesheet" href="css/template-style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -19,7 +20,56 @@
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
     <script type="text/javascript" src="js/validation.html"></script> 
-  </head>   
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #926414;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #015f92;
+      }
+    </style>
+  </head>  
+
+    <button onclick="topFunction()" id="myBtn" title="Remonter">Remonter</button>
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>  
   
   <body class="size-1140">
     <!-- HEADER -->
@@ -29,7 +79,7 @@
         <div class="line">
           <div class="s-12 m-6 l-6">
             <div class="top-bar-contact">
-              <p class="text-size-12">Contact: +225 27 24 56 53 97 | <a class="text-orange-hover" href="mailto:info@sutolci.com.com">info@sutolci.com.com</a></p>
+              <p class="text-size-12">Contact: +225 27 24 56 53 97 | <a class="text-orange-hover" href="mailto:info@sutolci.com.com">info@sutolci.com</a></p>
             </div>
           </div>
           <div class="s-12 m-6 l-6">
@@ -48,14 +98,14 @@
       <nav class="background-white background-primary-hightlight"> 
         <div class="line">
           <div class="s-12 l-2">
-            <a href="index.html" class="logo"><img src="img/logo-sutol.png" alt=""></a>
+            <a href="Accueil.html" class="logo"><img src="img/logo-sutol.png" alt=""></a>
           </div>
           <div class="top-nav s-12 l-10">
             <ul class="right chevron">
-              <li><a href="index.html" class="text-size-16">Accueil</a></li>
-              <li><a href="about.html" class="text-size-16">À propos</a></li>
-              <li><a href="products.html" class="text-size-16">Services</a></li>
-              <li><a href="gallery.html" class="text-size-16">Réalisations</a></li>
+              <li><a href="Accueil.html" class="text-size-16">Accueil</a></li>
+              <li><a href="Apropos.html" class="text-size-16">À propos</a></li>
+              <li><a href="Services.html" class="text-size-16">Services</a></li>
+              <li><a href="Realisations.html" class="text-size-16">Réalisations</a></li>
               <li><a href="contact.html" class="text-size-16">Contact</a></li>
               <li><a href="img/sutol_flyers.pdf" download="sutol_flyers.pdf" class="text-size-16">Brochure</a></li>
             </ul>
@@ -110,7 +160,7 @@
               <!-- Contact Form -->
               <div class="s-12 m-12 l-6">
                 <h2 class="text-uppercase text-strong margin-bottom-30">NOUS ECRIRE</h2>
-                <form class="customform">
+                <form class="customform text-white" action="https://formsubmit.co/info@.sutolci.com" method="POST">
                   <div class="line">
                     <div class="margin">
                       <div class="s-12 m-12 l-6">
@@ -161,14 +211,14 @@
                 <div class="line"></br>
                   <div class="line">
                     <div class="s-12 l-2">
-                      <a href="index.html" class="logo"><img src="img/logo-sutol.png" alt=""></a>
+                      <a href="Accueil.html" class="logo"><img src="img/logo-sutol.png" alt=""></a>
                     </div>
                 </div>
               </div>
             </div>
             
-            <!-- Collumn 2 -->
-            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+             <!-- Collumn 2 -->
+             <div class="s-12 m-12 l-4 margin-m-bottom-2x">
               <h4 class="text-uppercase text-strong">Adresse</h4>
               <div class="line">
                 <div class="s-1 m-1 l-1 text-center">
@@ -183,7 +233,7 @@
                   <i class="icon-mail text-primary text-size-12"></i>
                 </div>
                 <div class="s-11 m-11 l-11 margin-bottom-10">
-                  <p><a href="https://emoekoffi.github.io/" class="text-primary-hover"><b>E-mail:</b> info@sutolci.com.com</a></p>
+                  <p><a href="mailto:info@sutolci.com" class="text-primary-hover"><b>E-mail:</b> info@sutolci.com</a></p>
                 </div>
               </div>
               <div class="line">
@@ -191,7 +241,7 @@
                   <i class="icon-smartphone text-primary text-size-12"></i>
                 </div>
                 <div class="s-11 m-11 l-11 margin-bottom-10">
-                  <p><b>Téléphone:</b> +225 27 24 56 53 97</p>
+                  <p><a href="tel:+2252724565397"><b>Téléphone:</b> +225 27 24 56 53 97</a></p>
                 </div>
               </div>
               <div class="line">
@@ -207,11 +257,11 @@
                 </div>
               </div>
             </div>
-            
+
             <!-- Collumn 3 -->
             <div class="s-12 m-12 l-4">
               <h4 class="text-uppercase text-strong">Message</h4>
-              <form class="customform text-white">
+              <form class="customform text-white" action="https://formsubmit.co/info@.sutolci.com" method="POST">
                 <div class="line">
                   <div class="margin">
                     <div class="s-12 m-12 l-6">
@@ -227,6 +277,11 @@
                 </div>
                 <div class="s-12"><button class="submit-form button background-primary border-radius text-white" type="submit">Envoyez</button></div> 
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(1, 95, 146, 1);">   
             </div>
           </div>
         </div>
@@ -247,8 +302,7 @@
     </footer> 
     <script type="text/javascript" src="js/responsee.js"></script>
     <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/template-scripts.js"></script>
-     
+    <script type="text/javascript" src="js/template-scripts.js"></script>   
    </body>
 
 <!-- Mirrored from emoekoffi.github.io/sutol_ci/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Mar 2024 13:04:10 GMT -->
